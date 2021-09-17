@@ -19,7 +19,27 @@
 		7ACB074A26F4448000B77243 /* Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB074926F4448000B77243 /* Prototype.swift */; };
 		7ACB074C26F4448C00B77243 /* Signleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB074B26F4448C00B77243 /* Signleton.swift */; };
 		7ACB074F26F449FB00B77243 /* Projector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB074E26F449FB00B77243 /* Projector.swift */; };
+		7ACB075226F460A500B77243 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB075126F460A500B77243 /* AuthView.swift */; };
+		7ACB075426F4732900B77243 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB075326F4732900B77243 /* AuthViewController.swift */; };
+		7ACB075626F4751100B77243 /* AbstractFactoryTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB075526F4751100B77243 /* AbstractFactoryTester.swift */; };
+		7ACB075926F475FC00B77243 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACB075826F475FC00B77243 /* XCTest.framework */; };
+		7ACB075A26F475FC00B77243 /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACB075826F475FC00B77243 /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7ACB075D26F476CB00B77243 /* FactoryTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB075C26F476CB00B77243 /* FactoryTestCase.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7ACB075B26F475FC00B77243 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7ACB075A26F475FC00B77243 /* XCTest.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7ACB072B26F4443800B77243 /* CreationalPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreationalPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +56,11 @@
 		7ACB074926F4448000B77243 /* Prototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prototype.swift; sourceTree = "<group>"; };
 		7ACB074B26F4448C00B77243 /* Signleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signleton.swift; sourceTree = "<group>"; };
 		7ACB074E26F449FB00B77243 /* Projector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projector.swift; sourceTree = "<group>"; };
+		7ACB075126F460A500B77243 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		7ACB075326F4732900B77243 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		7ACB075526F4751100B77243 /* AbstractFactoryTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryTester.swift; sourceTree = "<group>"; };
+		7ACB075826F475FC00B77243 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7ACB075C26F476CB00B77243 /* FactoryTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ACB075926F475FC00B77243 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +80,7 @@
 			children = (
 				7ACB072D26F4443800B77243 /* CreationalPatterns */,
 				7ACB072C26F4443800B77243 /* Products */,
+				7ACB075726F475FC00B77243 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,8 +110,8 @@
 		7ACB074226F4443E00B77243 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				7ACB075026F45C1C00B77243 /* AbstractFactory */,
 				7ACB074D26F449E900B77243 /* Factory */,
-				7ACB074526F4446100B77243 /* AbstractFactory.swift */,
 				7ACB074726F4446D00B77243 /* Builder.swift */,
 				7ACB074926F4448000B77243 /* Prototype.swift */,
 				7ACB074B26F4448C00B77243 /* Signleton.swift */,
@@ -97,8 +124,28 @@
 			children = (
 				7ACB074326F4445100B77243 /* ProjectorFactory.swift */,
 				7ACB074E26F449FB00B77243 /* Projector.swift */,
+				7ACB075C26F476CB00B77243 /* FactoryTestCase.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		7ACB075026F45C1C00B77243 /* AbstractFactory */ = {
+			isa = PBXGroup;
+			children = (
+				7ACB074526F4446100B77243 /* AbstractFactory.swift */,
+				7ACB075126F460A500B77243 /* AuthView.swift */,
+				7ACB075326F4732900B77243 /* AuthViewController.swift */,
+				7ACB075526F4751100B77243 /* AbstractFactoryTester.swift */,
+			);
+			path = AbstractFactory;
+			sourceTree = "<group>";
+		};
+		7ACB075726F475FC00B77243 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7ACB075826F475FC00B77243 /* XCTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,6 +158,7 @@
 				7ACB072726F4443800B77243 /* Sources */,
 				7ACB072826F4443800B77243 /* Frameworks */,
 				7ACB072926F4443800B77243 /* Resources */,
+				7ACB075B26F475FC00B77243 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,15 +219,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ACB075426F4732900B77243 /* AuthViewController.swift in Sources */,
+				7ACB075626F4751100B77243 /* AbstractFactoryTester.swift in Sources */,
 				7ACB074426F4445100B77243 /* ProjectorFactory.swift in Sources */,
 				7ACB073326F4443800B77243 /* ViewController.swift in Sources */,
 				7ACB074A26F4448000B77243 /* Prototype.swift in Sources */,
 				7ACB074626F4446100B77243 /* AbstractFactory.swift in Sources */,
 				7ACB074F26F449FB00B77243 /* Projector.swift in Sources */,
 				7ACB072F26F4443800B77243 /* AppDelegate.swift in Sources */,
+				7ACB075226F460A500B77243 /* AuthView.swift in Sources */,
 				7ACB074C26F4448C00B77243 /* Signleton.swift in Sources */,
 				7ACB073126F4443800B77243 /* SceneDelegate.swift in Sources */,
 				7ACB074826F4446D00B77243 /* Builder.swift in Sources */,
+				7ACB075D26F476CB00B77243 /* FactoryTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

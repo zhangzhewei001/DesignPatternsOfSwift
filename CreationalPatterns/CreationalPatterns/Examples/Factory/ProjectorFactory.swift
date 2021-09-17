@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 protocol ProjectorFactory {
     
     func createProjector() -> Projector
@@ -16,7 +15,6 @@ protocol ProjectorFactory {
 }
 
 extension ProjectorFactory {
-    
     func syncedProjector(with projector: Projector) -> Projector {
         let newProjector = createProjector()
         return newProjector
@@ -35,18 +33,4 @@ class BluetoothFactory: ProjectorFactory {
     }
 }
 
-private class ClientCode {
-    private var currentProjector: Projector?
-    
-    func present(info: String, with factory: ProjectorFactory) {
-        guard let projector = currentProjector else {
-            let projector = factory.createProjector()
-            projector.present(info: info)
-            self.currentProjector = projector
-            return
-        }
-        
-        self.currentProjector = factory.syncedProjector(with: projector)
-        self.currentProjector?.present(info: info)
-    }
-}
+
