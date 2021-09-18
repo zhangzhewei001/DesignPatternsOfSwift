@@ -36,7 +36,6 @@ class WifiProjector: Projector {
     func update(with page: Int) {
         currentPage = page
     }
-    
 }
 
 class BluetoothProjector: Projector {

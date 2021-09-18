@@ -15,7 +15,7 @@
 		7ACB073B26F4443800B77243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ACB073926F4443800B77243 /* LaunchScreen.storyboard */; };
 		7ACB074426F4445100B77243 /* ProjectorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB074326F4445100B77243 /* ProjectorFactory.swift */; };
 		7ACB074626F4446100B77243 /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB074526F4446100B77243 /* AbstractFactory.swift */; };
-		7ACB074826F4446D00B77243 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB074726F4446D00B77243 /* Builder.swift */; };
+		7ACB074826F4446D00B77243 /* QueryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB074726F4446D00B77243 /* QueryBuilder.swift */; };
 		7ACB074A26F4448000B77243 /* Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB074926F4448000B77243 /* Prototype.swift */; };
 		7ACB074C26F4448C00B77243 /* Signleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB074B26F4448C00B77243 /* Signleton.swift */; };
 		7ACB074F26F449FB00B77243 /* Projector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB074E26F449FB00B77243 /* Projector.swift */; };
@@ -25,6 +25,8 @@
 		7ACB075926F475FC00B77243 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACB075826F475FC00B77243 /* XCTest.framework */; };
 		7ACB075A26F475FC00B77243 /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACB075826F475FC00B77243 /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7ACB075D26F476CB00B77243 /* FactoryTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB075C26F476CB00B77243 /* FactoryTestCase.swift */; };
+		7ACB076F26F5967C00B77243 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB076E26F5967C00B77243 /* DataProvider.swift */; };
+		7ACB077126F597CA00B77243 /* BuilderTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB077026F597CA00B77243 /* BuilderTester.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,7 +54,7 @@
 		7ACB073C26F4443800B77243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7ACB074326F4445100B77243 /* ProjectorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectorFactory.swift; sourceTree = "<group>"; };
 		7ACB074526F4446100B77243 /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
-		7ACB074726F4446D00B77243 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		7ACB074726F4446D00B77243 /* QueryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryBuilder.swift; sourceTree = "<group>"; };
 		7ACB074926F4448000B77243 /* Prototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prototype.swift; sourceTree = "<group>"; };
 		7ACB074B26F4448C00B77243 /* Signleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signleton.swift; sourceTree = "<group>"; };
 		7ACB074E26F449FB00B77243 /* Projector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projector.swift; sourceTree = "<group>"; };
@@ -61,6 +63,8 @@
 		7ACB075526F4751100B77243 /* AbstractFactoryTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryTester.swift; sourceTree = "<group>"; };
 		7ACB075826F475FC00B77243 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		7ACB075C26F476CB00B77243 /* FactoryTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryTestCase.swift; sourceTree = "<group>"; };
+		7ACB076E26F5967C00B77243 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		7ACB077026F597CA00B77243 /* BuilderTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderTester.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,10 +115,10 @@
 			isa = PBXGroup;
 			children = (
 				7ACB075026F45C1C00B77243 /* AbstractFactory */,
+				7ACB075E26F4798300B77243 /* Builder */,
 				7ACB074D26F449E900B77243 /* Factory */,
-				7ACB074726F4446D00B77243 /* Builder.swift */,
-				7ACB074926F4448000B77243 /* Prototype.swift */,
-				7ACB074B26F4448C00B77243 /* Signleton.swift */,
+				7ACB075F26F4798B00B77243 /* Prototype */,
+				7ACB076026F4799D00B77243 /* Singleton */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -146,6 +150,32 @@
 				7ACB075826F475FC00B77243 /* XCTest.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7ACB075E26F4798300B77243 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				7ACB074726F4446D00B77243 /* QueryBuilder.swift */,
+				7ACB076E26F5967C00B77243 /* DataProvider.swift */,
+				7ACB077026F597CA00B77243 /* BuilderTester.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		7ACB075F26F4798B00B77243 /* Prototype */ = {
+			isa = PBXGroup;
+			children = (
+				7ACB074926F4448000B77243 /* Prototype.swift */,
+			);
+			path = Prototype;
+			sourceTree = "<group>";
+		};
+		7ACB076026F4799D00B77243 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				7ACB074B26F4448C00B77243 /* Signleton.swift */,
+			);
+			path = Singleton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +251,8 @@
 			files = (
 				7ACB075426F4732900B77243 /* AuthViewController.swift in Sources */,
 				7ACB075626F4751100B77243 /* AbstractFactoryTester.swift in Sources */,
+				7ACB076F26F5967C00B77243 /* DataProvider.swift in Sources */,
+				7ACB077126F597CA00B77243 /* BuilderTester.swift in Sources */,
 				7ACB074426F4445100B77243 /* ProjectorFactory.swift in Sources */,
 				7ACB073326F4443800B77243 /* ViewController.swift in Sources */,
 				7ACB074A26F4448000B77243 /* Prototype.swift in Sources */,
@@ -230,7 +262,7 @@
 				7ACB075226F460A500B77243 /* AuthView.swift in Sources */,
 				7ACB074C26F4448C00B77243 /* Signleton.swift in Sources */,
 				7ACB073126F4443800B77243 /* SceneDelegate.swift in Sources */,
-				7ACB074826F4446D00B77243 /* Builder.swift in Sources */,
+				7ACB074826F4446D00B77243 /* QueryBuilder.swift in Sources */,
 				7ACB075D26F476CB00B77243 /* FactoryTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
