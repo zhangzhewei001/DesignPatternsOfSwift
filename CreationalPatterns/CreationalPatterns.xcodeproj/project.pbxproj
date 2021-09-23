@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A222CDC26FC5F3300BDE937 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A222CDB26FC5F3300BDE937 /* Author.swift */; };
 		7ACB072F26F4443800B77243 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB072E26F4443800B77243 /* AppDelegate.swift */; };
 		7ACB073126F4443800B77243 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB073026F4443800B77243 /* SceneDelegate.swift */; };
 		7ACB073326F4443800B77243 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB073226F4443800B77243 /* ViewController.swift */; };
@@ -23,27 +24,13 @@
 		7ACB075426F4732900B77243 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB075326F4732900B77243 /* AuthViewController.swift */; };
 		7ACB075626F4751100B77243 /* AbstractFactoryTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB075526F4751100B77243 /* AbstractFactoryTester.swift */; };
 		7ACB075926F475FC00B77243 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACB075826F475FC00B77243 /* XCTest.framework */; };
-		7ACB075A26F475FC00B77243 /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACB075826F475FC00B77243 /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7ACB075D26F476CB00B77243 /* FactoryTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB075C26F476CB00B77243 /* FactoryTestCase.swift */; };
 		7ACB076F26F5967C00B77243 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB076E26F5967C00B77243 /* DataProvider.swift */; };
 		7ACB077126F597CA00B77243 /* BuilderTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB077026F597CA00B77243 /* BuilderTester.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		7ACB075B26F475FC00B77243 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				7ACB075A26F475FC00B77243 /* XCTest.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		7A222CDB26FC5F3300BDE937 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
 		7ACB072B26F4443800B77243 /* CreationalPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreationalPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ACB072E26F4443800B77243 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7ACB073026F4443800B77243 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				7ACB074926F4448000B77243 /* Prototype.swift */,
+				7A222CDB26FC5F3300BDE937 /* Author.swift */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -188,7 +176,6 @@
 				7ACB072726F4443800B77243 /* Sources */,
 				7ACB072826F4443800B77243 /* Frameworks */,
 				7ACB072926F4443800B77243 /* Resources */,
-				7ACB075B26F475FC00B77243 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +246,7 @@
 				7ACB074626F4446100B77243 /* AbstractFactory.swift in Sources */,
 				7ACB074F26F449FB00B77243 /* Projector.swift in Sources */,
 				7ACB072F26F4443800B77243 /* AppDelegate.swift in Sources */,
+				7A222CDC26FC5F3300BDE937 /* Author.swift in Sources */,
 				7ACB075226F460A500B77243 /* AuthView.swift in Sources */,
 				7ACB074C26F4448C00B77243 /* Signleton.swift in Sources */,
 				7ACB073126F4443800B77243 /* SceneDelegate.swift in Sources */,
@@ -413,6 +401,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3NVSGQ4MHX;
 				INFOPLIST_FILE = CreationalPatterns/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,6 +421,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3NVSGQ4MHX;
 				INFOPLIST_FILE = CreationalPatterns/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -50,8 +50,6 @@ class RealmQueryBuilder<Model: DomainModel>: BaseQueryBuilder<Model> {
         operations.append(Query.filter(predicate))
         return self
     }
-    
-    //func includesPropertyValues(_ toggle: Bool) -> CoreD
 }
 
 
